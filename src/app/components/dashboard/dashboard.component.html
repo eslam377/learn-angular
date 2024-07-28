@@ -1,0 +1,36 @@
+
+<div class="mb-3">
+  <button type="button" class="btn btn-secondary">Add New Employee</button>
+</div>
+
+<p-table
+  [value]="employees"
+  [resizableColumns]="true"
+   styleClass="p-datatable-striped"
+   [tableStyle]="{'min-width': '50rem'}">
+  <ng-template pTemplate="header">
+    <tr>
+      <th pResizableColumn>Name</th>
+      <th pResizableColumn>Job</th>
+      <th pResizableColumn>Department</th>
+      <th pResizableColumn>email</th>
+      <th pResizableColumn>Action</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-employee>
+    <tr>
+      <td>John Doe</td>
+      <td>Java Developer</td>
+      <td>Development</td>
+      <td>johndoe123@gmail.com</td>
+      <td>
+<!--        <div class="card flex justify-content-center flex-wrap gap-3">-->
+<!--          <p-toast />-->
+<!--          <p-splitButton-->
+<!--            label="Action"-->
+<!--            [model]="items" />-->
+<!--        </div>-->
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
